@@ -30,13 +30,13 @@ website:
   twitter-card: true
   repo-url: https://github.com/your-user/your-repo
   repo-actions: [issue]
-  comments:
-    giscus:
-      repo: your-user/your-repo
-      repo-id: REPO_ID
-      category: General
-      category-id: CATEGORY_ID
-      mapping: pathname
+  #comments:
+  #  giscus:
+  #    repo: your-user/your-repo
+  #    repo-id: REPO_ID
+  #    category: General
+  #    category-id: CATEGORY_ID
+  #    mapping: pathname
 
 format:
   html:

@@ -4,7 +4,7 @@ page-layout: article
 image: assets/og-image.png
 ---
 
-**Hi, I'm …** I build trustworthy, production-grade ML & GenAI.
+**Hi, I'm Vamsi Krishna Mudimela, experience AI & ML Leader & Enthusiast** I build trustworthy, production-grade ML & GenAI Applications which drive measurable business value.
 
 **What I do**
 - AI/ML: NLP, recommenders, optimization
@@ -12,6 +12,6 @@ image: assets/og-image.png
 - MLOps: data pipelines, monitoring, CI/CD
 
 **Contact**
-- Email: your@email.com
-- LinkedIn: https://www.linkedin.com/in/your-handle/
-- GitHub: https://github.com/your-user
+- Email: krishna.vamsi80@email.com
+- LinkedIn: https://www.linkedin.com/in/vamckris/
+- GitHub: https://github.com/vamsi7964

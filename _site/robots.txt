@@ -1,1 +1,1 @@
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://vamsi7964.github.io/ai-ml-portfolio/sitemap.xml
