@@ -3,8 +3,8 @@ project:
   output-dir: _site
 
 website:
-  title: "Your Name — AI • ML • Stats"
-  site-url: https://your-domain.com
+  title: "Vamsi Krishna — AI • ML • DL • Stats"
+  site-url: https://vamsi7964.github.io/ai-ml-portfolio
   description: "Personal site for projects and plain-English explanations of complex AI/ML/Statistics topics."
   navbar:
     logo: assets/favicon.png
