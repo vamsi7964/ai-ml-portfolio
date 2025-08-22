@@ -11,7 +11,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Below are a few representative projects. Each card links to a repo and a short write-up.\n\n\nMultilingual Review Summarizer\n\n\nTranslation + summarization + sentiment with Transformers, deployed on Hugging Face Spaces.\n\n\n\nCode\n\n\nWrite-up\n\n\n\n\n\nCredit Risk Model Validation Toolkit\n\n\nEnd-to-end validation including calibration, drift, and fairness diagnostics.\n\n\n\nCode\n\n\nNotes"
+    "text": "Below are representative projects. Each card links to code, a demo, and a short write-up.\n\n\n\nMultilingual Review Summarizer\n\n\nTranslation → summarization → sentiment for restaurant reviews; deployed on Spaces.\n\n\nTransformers HF Datasets Gradio\n\n\nCode · Demo · Write-up\n\n\n\n\nCredit Risk Model Validation Toolkit\n\n\nCalibration (ECE), drift, fairness diagnostics, and stress tests for production models.\n\n\nPython Pandas Plotly\n\n\nCode · Notes\n\n\n\n\nAgentic AI Playgrounds\n\n\nSmall, focused experiments comparing tool-use, memory, and evaluation for agent frameworks.\n\n\nLLMs Evaluation RAG\n\n\nCode · Write-up"
   },
   {
     "objectID": "posts/2025-08-19-transformers.html",
