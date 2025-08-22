@@ -1,0 +1,4 @@
+:root{ --brand:#3b82f6; }
+.hero{ padding:3rem 0 2rem; }
+.badge-skill{ display:inline-block; padding:.35rem .65rem; border-radius:999px; background:#eef2ff; margin:.15rem .25rem; font-size:.85rem; }
+.project-card{ border:1px solid #e5e7eb; border-radius:1rem; padding:1rem 1.25rem; margin-bottom:1rem; }

@@ -1,0 +1,8 @@
+---
+title: "Talks & Workshops"
+page-layout: article
+---
+
+- 2025 — *Making LLMs Explain Themselves*
+- 2024 — *From Metrics to Monitoring: Practical ML Evaluation*
+- 2024 — *Modern Feature Stores and Online Inference*

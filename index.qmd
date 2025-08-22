@@ -1,0 +1,19 @@
+---
+title: "Home"
+image: assets/og-image.png
+---
+
+<div class="hero">
+<h1>Hi — I turn complex AI/ML ideas into clear, practical insights.</h1>
+<p class="lead">Here you'll find projects, plain-English articles, and notes on statistics, ML engineering, and generative AI.</p>
+</div>
+
+::: {.callout-note}
+**New here?** Start with the <a href="posts/index.qmd">Articles</a> or jump to <a href="projects.qmd">Projects</a>.
+:::
+
+## Highlights
+
+- Explainable write-ups on transformers, embeddings, evaluation, and causal inference.
+- Hands-on projects in NLP, recommendation, and decision science.
+- Notes and templates you can reuse.

@@ -1,0 +1,13 @@
+website:
+  sidebar: false
+
+format:
+  html:
+    df-print: paged
+
+filters:
+  - quarto
+
+feed:
+  enable: true
+  path: index.xml

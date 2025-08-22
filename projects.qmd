@@ -1,0 +1,24 @@
+---
+title: "Projects"
+page-layout: article
+---
+
+Below are a few representative projects. Each card links to a repo and a short write-up.
+
+<div class="project-card">
+  <h3>Multilingual Review Summarizer</h3>
+  <p>Translation + summarization + sentiment with Transformers, deployed on Hugging Face Spaces.</p>
+  <ul>
+    <li><a href="https://github.com/your-user/repo1">Code</a></li>
+    <li><a href="posts/index.qmd#">Write-up</a></li>
+  </ul>
+</div>
+
+<div class="project-card">
+  <h3>Credit Risk Model Validation Toolkit</h3>
+  <p>End-to-end validation including calibration, drift, and fairness diagnostics.</p>
+  <ul>
+    <li><a href="https://github.com/your-user/repo2">Code</a></li>
+    <li><a href="posts/index.qmd#">Notes</a></li>
+  </ul>
+</div>

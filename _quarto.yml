@@ -1,0 +1,53 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Your Name — AI • ML • Stats"
+  site-url: https://your-domain.com
+  description: "Personal site for projects and plain-English explanations of complex AI/ML/Statistics topics."
+  navbar:
+    logo: assets/favicon.png
+    right:
+      - text: Articles
+        href: posts/index.qmd
+      - text: Projects
+        href: projects.qmd
+      - text: Talks
+        href: talks.qmd
+      - text: About
+        href: about.qmd
+  page-footer:
+    left: "© {year} Your Name"
+    right:
+      - icon: github
+        href: https://github.com/your-user
+      - icon: linkedin
+        href: https://www.linkedin.com/in/your-handle/
+  search: true
+  favicon: assets/favicon.png
+  open-graph: true
+  twitter-card: true
+  repo-url: https://github.com/your-user/your-repo
+  repo-actions: [issue]
+  comments:
+    giscus:
+      repo: your-user/your-repo
+      repo-id: REPO_ID
+      category: General
+      category-id: CATEGORY_ID
+      mapping: pathname
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: darkly
+    css: styles.css
+    toc: true
+    code-copy: true
+    smooth-scroll: true
+    anchor-sections: true
+
+metadata-files:
+  - _website.yaml

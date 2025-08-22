@@ -1,0 +1,17 @@
+---
+title: "About"
+page-layout: article
+image: assets/og-image.png
+---
+
+**Hi, I'm …** I build trustworthy, production-grade ML & GenAI.
+
+**What I do**
+- AI/ML: NLP, recommenders, optimization
+- Evaluation & Risk: calibration, drift, fairness, LLM eval
+- MLOps: data pipelines, monitoring, CI/CD
+
+**Contact**
+- Email: your@email.com
+- LinkedIn: https://www.linkedin.com/in/your-handle/
+- GitHub: https://github.com/your-user
