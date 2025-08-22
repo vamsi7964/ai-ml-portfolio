@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Hi, I’m … I build trustworthy, production-grade ML & GenAI.\nWhat I do - AI/ML: NLP, recommenders, optimization - Evaluation & Risk: calibration, drift, fairness, LLM eval - MLOps: data pipelines, monitoring, CI/CD\nContact - Email: your@email.com - LinkedIn: https://www.linkedin.com/in/your-handle/ - GitHub: https://github.com/your-user"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Below are a few representative projects. Each card links to a repo and a short write-up.\n\n\nMultilingual Review Summarizer\n\n\nTranslation + summarization + sentiment with Transformers, deployed on Hugging Face Spaces.\n\n\n\nCode\n\n\nWrite-up\n\n\n\n\n\nCredit Risk Model Validation Toolkit\n\n\nEnd-to-end validation including calibration, drift, and fairness diagnostics.\n\n\n\nCode\n\n\nNotes"
+  },
+  {
+    "objectID": "posts/2025-08-19-transformers.html",
+    "href": "posts/2025-08-19-transformers.html",
+    "title": "Transformers, explained simply (with just enough math)",
+    "section": "",
+    "text": "A transformer is a pattern-matching machine powered by attention. Here’s the shortest path from idea → intuition → math."
+  },
+  {
+    "objectID": "posts/2025-08-19-transformers.html#intuition-first",
+    "href": "posts/2025-08-19-transformers.html#intuition-first",
+    "title": "Transformers, explained simply (with just enough math)",
+    "section": "Intuition first",
+    "text": "Intuition first\n\nTokens are chunks of text turned into vectors.\nAttention lets each token look at the others and decide which ones matter.\nStack layers of this to build rich context."
+  },
+  {
+    "objectID": "posts/2025-08-19-transformers.html#the-core-equations-briefly",
+    "href": "posts/2025-08-19-transformers.html#the-core-equations-briefly",
+    "title": "Transformers, explained simply (with just enough math)",
+    "section": "The core equations (briefly)",
+    "text": "The core equations (briefly)\nGiven queries \\(Q\\), keys \\(K\\), and values \\(V\\):\n\\[\n\\text{Attention}(Q,K,V) = \\text{softmax}\\!\\left(\\frac{QK^\\top}{\\sqrt{d_k}}\\right) V\n\\]\n\nThe softmax scores say how much each other token matters.\nWe use multiple heads to look for different patterns in parallel."
+  },
+  {
+    "objectID": "posts/2025-08-19-transformers.html#try-it-in-python",
+    "href": "posts/2025-08-19-transformers.html#try-it-in-python",
+    "title": "Transformers, explained simply (with just enough math)",
+    "section": "Try it in Python",
+    "text": "Try it in Python\n\nimport numpy as np\n\ndef scaled_dot_attn(Q,K,V):\n    scores = Q @ K.T / np.sqrt(Q.shape[-1])\n    W = np.exp(scores - scores.max(axis=-1, keepdims=True))\n    W = W / W.sum(axis=-1, keepdims=True)\n    return W @ V\n\nd = 4\nQ = np.random.randn(3,d); K = np.random.randn(3,d); V = np.random.randn(3,d)\nout = scaled_dot_attn(Q,K,V)\nout.shape\n\n(3, 4)"
+  },
+  {
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Articles",
+    "section": "",
+    "text": "Welcome! These posts aim to explain complex concepts simply, with runnable code and visuals where helpful.\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Author\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nRoPE vs. absolute positional embeddings (quick visual)\n\n\n\nNLP\n\nEmbeddings\n\nPositional-Encoding\n\n\n\n\n\n\n\n\n\nAug 19, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nTransformers, explained simply (with just enough math)\n\n\n\nNLP\n\nTransformers\n\nFundamentals\n\n\n\n\n\n\n\n\n\nAug 19, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2025-08-19-rope-vs-absolute.html",
+    "href": "posts/2025-08-19-rope-vs-absolute.html",
+    "title": "RoPE vs. absolute positional embeddings (quick visual)",
+    "section": "",
+    "text": "TL;DR: Absolute positional embeddings add a learned offset per position. RoPE rotates pairs of feature dimensions by an angle that depends on the position, letting relative positions emerge inside attention.\n\nOne-liner intuition\n\nAbsolute: “This token is at index 12.”\nRoPE: “The relative angle between tokens carries the position info.”\n\n\nimport numpy as np\n\ndef rope_rotate(x, theta):\n    x = x.reshape(-1,2)\n    c, s = np.cos(theta), np.sin(theta)\n    R = np.array([[c,-s],[s,c]])\n    return (x @ R).reshape(-1)\n\nx = np.array([1.0,0.0, 0.5,0.5])\ny = rope_rotate(x, theta=0.3)\nz = rope_rotate(x, theta=0.6)\n(y, z)\n\n(array([ 0.95533649, -0.29552021,  0.62542835,  0.32990814]),\n array([ 0.82533561, -0.56464247,  0.69498904,  0.13034657]))"
+  },
+  {
+    "objectID": "talks.html",
+    "href": "talks.html",
+    "title": "Talks & Workshops",
+    "section": "",
+    "text": "2025 — Making LLMs Explain Themselves\n2024 — From Metrics to Monitoring: Practical ML Evaluation\n2024 — Modern Feature Stores and Online Inference"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Here you’ll find projects, plain-English articles, and notes on statistics, ML engineering, and generative AI."
+  },
+  {
+    "objectID": "index.html#highlights",
+    "href": "index.html#highlights",
+    "title": "Home",
+    "section": "Highlights",
+    "text": "Highlights\n\nExplainable write-ups on transformers, embeddings, evaluation, and causal inference.\nHands-on projects in NLP, recommendation, and decision science.\nNotes and templates you can reuse."
+  }
+]
